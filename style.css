@@ -35,3 +35,17 @@ h1{font-family:Portfolio Text,Georgia,serif;font-size:clamp(54px,6.5vw,80px);fon
 @media(max-width:700px){.market-story{grid-template-columns:1fr}.market-tabs{flex-direction:row;border-right:0;border-bottom:1px solid var(--line);padding:10px;gap:4px}.market-tabs button{flex:1;padding:10px 7px;text-align:center;font-size:12px}#market-panel{padding:22px}.workflow-note{display:block}.workflow-note p{margin-top:8px}.challenge{padding:24px 20px}.challenge-heading h3{font-size:24px}.challenge-heading>span{font-size:11px}.game-footer{align-items:flex-start;flex-direction:column}.game-footer .action-button{align-self:flex-end}.portfolio-title{align-items:flex-start}.portfolio-title h3{font-size:25px}.portfolio-title>.quiet-button{white-space:nowrap;font-size:11px}.portfolio-lab{grid-template-columns:1fr}.portfolio-lab .controls{border-right:0;border-bottom:1px solid var(--line)}.portfolio-metrics strong{font-size:34px}.quote-equation{gap:12px;padding:16px}.quote-equation strong{font-size:23px}.segment-heading{display:block}.segment-heading>span{display:block;margin-bottom:10px}.repo-row .code-links{margin-top:20px}}
 @media(max-width:420px){.lifecycle{grid-template-columns:1fr}.quote-equation{grid-template-columns:1fr}.quote-equation span{display:flex;justify-content:space-between;align-items:center}.quote-equation strong{margin:0}.portfolio-metrics{gap:22px 12px}.portfolio-metrics strong{font-size:29px}}
 .education p+strong{display:block;margin-top:16px}
+.hero-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:8px}
+.hero-cta{display:inline-block;background:var(--ink);color:var(--paper);padding:12px 20px;font-size:14px;border-radius:2px;text-decoration:none;white-space:nowrap;transition:background .2s ease}
+.hero-cta:hover,.hero-cta:focus-visible{background:var(--blue);color:var(--paper)}
+.about-photo{cursor:pointer}
+.about-photo:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.photo-swap{position:relative}
+.photo-swap .photo-alt{position:absolute;inset:0;height:100%;opacity:0;transition:opacity .35s ease}
+.about-photo.is-flipped .photo-alt{opacity:1}
+.about-photo .cap-alt{display:none}
+.about-photo.is-flipped .cap-main{display:none}
+.about-photo.is-flipped .cap-alt{display:inline}
+.cap-hint{margin-left:4px;opacity:.6}
+@media(hover:hover){.about-photo:hover .photo-alt{opacity:1}.about-photo:hover .cap-main{display:none}.about-photo:hover .cap-alt{display:inline}}
+@media(prefers-reduced-motion:reduce){.photo-swap .photo-alt,.hero-cta{transition:none}}
